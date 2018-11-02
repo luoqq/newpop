@@ -1,0 +1,26 @@
+<div class="container" >
+  <h1> 先心病案 编号：BL324</h1>
+<div class="media">
+
+  <img class="mr-3" src="assets/img/d1.png" alt="Generic placeholder image">
+  <div class="media-body">
+    <h4 class="mt-0">病例名称及介绍</h4>
+    <p>心脏病是心脏疾病的总称，包括风湿性心脏病、先天性心脏病、高血压性心脏病、冠心病、心肌炎等各种心脏病。其中先天性心脏病与遗传有关.</p>
+    <p>患有先天性心脏病就要及时的做好治疗工作，先天性心脏病怎么治疗好这是备受关注的问题，先天性心脏病是由于遗传因素而引发的，孩子一生下来就注定患有心脏病，所以一定... </p>
+  </div>
+</div>
+  <div class="row">
+    <div *ngFor ="let product of products" class="col-md-3 col-sd-3 col-lg-3">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{ product.pic }}" alt="Card image cap" style="width: 180px;height:120px;">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.title }}</h5>
+          <p class="card-text">病例说明. 编号是：{{productid}}</p>
+          <a [routerLink]="['/product/sellerinfo']" class="btn btn-success">加载</a>
+          <a [routerLink]="['/product/sellerinfo']" class="btn btn-info">展示</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
